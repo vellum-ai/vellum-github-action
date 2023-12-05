@@ -1,0 +1,12 @@
+{
+  "name": "vellum-github-action",
+  "version": "1.0.0",
+  "description": "Run your Vellum test suite as a GitHub Action",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "keywords": [],
+  "author": "Vellum <support@vellum.ai>",
+  "license": "MIT"
+}
