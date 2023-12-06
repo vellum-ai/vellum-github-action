@@ -1,0 +1,13 @@
+name: "Vellum Test Suite Runner"
+description: "Run a Vellum test suite against your custom ML workflow."
+inputs:
+  test-suite-id:
+    description: "Which test suite to run"
+    required: true
+  path:
+    description: "Path to the dataset to run evaluation on"
+    required: true
+  
+runs:
+  using: "node20"
+  main: "dist/index.js"
