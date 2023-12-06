@@ -4,7 +4,7 @@
   "description": "Run your Vellum test suite as a GitHub Action",
   "main": "index.js",
   "scripts": {
-    "build": "tsc src/index.ts --outDir dist",
+    "build": "esbuild src/index.ts --platform=node --bundle --outfile=dist/index.js",
     "test": "echo \"Error: no test specified\""
   },
   "keywords": [],
@@ -15,6 +15,7 @@
     "@actions/github": "^6.0.0"
   },
   "devDependencies": {
+    "esbuild": "^0.19.8",
     "typescript": "^5.3.2"
   }
 }
